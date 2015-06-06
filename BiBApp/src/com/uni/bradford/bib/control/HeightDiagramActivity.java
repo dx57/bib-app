@@ -287,6 +287,9 @@ public class HeightDiagramActivity extends Activity
 		averageDataSet.setFillAlpha(65);
 		averageDataSet.setHighLightColor(Color.rgb(244, 117, 117));
 		averageDataSet.setDrawCubic(true);
+		// averageDataSet.setCircleColor(Color.parseColor("#009933"));
+		// averageDataSet.setCircleSize(6f);
+		// averageDataSet.setDrawCircles(true);
 		
 		// Add datasets for line chart
 		ArrayList<LineDataSet> dataSets = new ArrayList<LineDataSet>();
