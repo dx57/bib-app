@@ -26,7 +26,7 @@ public class WebServiceInteraction
 	private static final String NAME_SPACE = "http://bib.service.code/";
 	private static final String URL = "http://vmjsp1.inf.brad.ac.uk:8080/BIBService/BIBWebService?wsdl";
 //	private static final String URL = "http://medicalxtra.cloudapp.net/BIBService/BIBWebService?wsdl";
-//	private static final String URL = "http://192.168.173.1:8084/BIBService/BIBWebService?wsdl"; // TODO: Switch live demo
+//	private static final String URL = "http://192.168.173.1:8084/BIBService/BIBWebService?wsdl"; // TODO: Switch live demo.. change IP!!!
 	 
 	private static final String GET_NEW_VERSION_DATE = "GetNewVersionDate";
 	private static final String GET_NEW_VERSION_DATE_RESPONSE = "GetNewVersionDateResponse";

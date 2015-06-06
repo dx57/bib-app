@@ -371,7 +371,10 @@ public class LoginActivity extends Activity
 			System.out.println("Checker RememberMe clicked state: " + isChecked);
 			
 			// Change data model
-			dataModel.setRememberUser(isChecked);
+			if (dataModel != null)
+			{
+				dataModel.setRememberUser(isChecked);
+			}
 		}	
 	}
 	

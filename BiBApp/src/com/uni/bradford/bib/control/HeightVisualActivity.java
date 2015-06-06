@@ -8,6 +8,7 @@ import java.text.DecimalFormat;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -16,6 +17,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
+import android.telephony.TelephonyManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -474,7 +476,6 @@ public class HeightVisualActivity extends Activity
 			
 			// Convert average height in cm to pixel height for the image representation  
 			percentageQuotationPixel = calcPixelPercentageQuotation(averageValue);
-				
 			
 			// Format calculated value for visualisation
 			DecimalFormat f = new DecimalFormat("#0.0"); 
