@@ -405,7 +405,7 @@ public class HeightVisualActivity extends Activity
 					sbTimeLine.setVisibility(SeekBar.VISIBLE);
 					tvNoData.setVisibility(TextView.INVISIBLE);
 	
-					tvOwnChildHeight.setText(dataModel.getMother().getChild(position).getChildData(sbTimeLine.getProgress()).getHeight() + " " + getResources().getString(R.string.cm));
+					tvOwnChildHeight.setText(getResources().getString(R.string.own) + dataModel.getMother().getChild(position).getChildData(sbTimeLine.getProgress()).getHeight() + " " + getResources().getString(R.string.cm));
 					
 					// Use correct average curve
 					double[] average = dataModel.getMother().getChild(position).getAverageForChildGender();
@@ -416,7 +416,7 @@ public class HeightVisualActivity extends Activity
 					// Format calculated value for visualisation
 					DecimalFormat f = new DecimalFormat("#0.0"); 
 					
-					tvCompareChildHeight.setText(f.format(averageValue) + " " + getResources().getString(R.string.cm));
+					tvCompareChildHeight.setText(getResources().getString(R.string.average) + f.format(averageValue) + " " + getResources().getString(R.string.cm));
 				}
 				
 				// Visualise first year with growth data
@@ -463,7 +463,7 @@ public class HeightVisualActivity extends Activity
 			// Use convertet height to adjust child image
 			ivOwnChild.getLayoutParams().height = (int)(minHeight + percentageQuotationPixel);
 			ivOwnChild.requestLayout();
-			tvOwnChildHeight.setText(selectedChild.getChildData(progress).getHeight() + " " + getResources().getString(R.string.cm));
+			tvOwnChildHeight.setText(getResources().getString(R.string.own) + selectedChild.getChildData(progress).getHeight() + " " + getResources().getString(R.string.cm));
 			
 			
 			// Hard coded values because BiB organisation did not provide data in time
@@ -482,7 +482,7 @@ public class HeightVisualActivity extends Activity
 			
 			ivCompareChild.getLayoutParams().height = (int)(minHeight + percentageQuotationPixel);
 			ivCompareChild.requestLayout();
-			tvCompareChildHeight.setText(f.format(averageValue) + " " + getResources().getString(R.string.cm));
+			tvCompareChildHeight.setText(getResources().getString(R.string.average) + f.format(averageValue) + " " + getResources().getString(R.string.cm));
 			
 			// Update text representation for slider progress
 			tvCurrent.setText(constructRelativeAge(selectedChild.getChildData(progress).getAgeDays()));
