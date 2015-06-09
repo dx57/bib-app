@@ -499,8 +499,8 @@ public class LoginActivity extends Activity
 				}
 	
 				// Debug: Show in GUI
-				 Toast toast = Toast.makeText(LoginActivity.this, "..loaded from file", Toast.LENGTH_SHORT);
-				 toast.show();
+				// Toast toast = Toast.makeText(LoginActivity.this, "..loaded from file", Toast.LENGTH_SHORT);
+				// toast.show();
 			}
 		}
 	}
@@ -543,8 +543,8 @@ public class LoginActivity extends Activity
 			}
 			
 			// Debug: Show in GUI
-			 Toast toast = Toast.makeText(LoginActivity.this, "..loaded from WebService", Toast.LENGTH_SHORT);
-			 toast.show();
+			// Toast toast = Toast.makeText(LoginActivity.this, "..loaded from WebService", Toast.LENGTH_SHORT);
+			// toast.show();
 		}
 	}
 	
