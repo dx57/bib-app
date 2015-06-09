@@ -66,6 +66,9 @@
     
     <string name="own_child">My child</string>
     <string name="national_average">National average</string>
+    <string name="own">Own:</string>
+    <string name="average">Avg:</string>
+    
     
     <string name="year_shurtcut">yr</string>
     <string name="month_shurtcut">m</string>
